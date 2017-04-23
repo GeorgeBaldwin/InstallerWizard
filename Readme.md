@@ -1,4 +1,4 @@
-# ![GBOS](/Images/AppIcon.png) App Installer 
+# ![GBOS](/Images/AppIcon.png | width=50) App Installer 
   - Automatic Installation of important software to you
   - Supports any kind of installation.
   - Built using the AutoIt script editor.
