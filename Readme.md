@@ -5,7 +5,7 @@
   - Magic
 
 # Usage
-  - Once compiled, a user will only need to step through the wizard and select the apps to be installed. the application handles the rest.
+Once compiled, a user will only need to step through the wizard and select the apps to be installed. the application handles the rest.
 
 Future Plans:
   - Uninstall capabilities
@@ -14,11 +14,11 @@ Future Plans:
 
 This is an amazing application, many have been pleased with the results, and naturally those that benefit the most are those that enjoy many cups of coffee throughout the day such as the assistant to the assistant of the President of the Coffee Club who states
 
-> Before, it was never really possible to  
-> enjoy a really good cup of coffee at the 
-> office. Thanks to GBOS, we are now able to 
-> get things done while at the same time 
-> enjoying a bold cup of coffee without those 
+> Before, it was never really possible to
+> enjoy a really good cup of coffee at the
+> office. Thanks to GBOS, we are now able to
+> get things done while at the same time
+> enjoying a bold cup of coffee without those
 > guilty feelings of being unproductive.
 > THANK YOU GBOS!
 
