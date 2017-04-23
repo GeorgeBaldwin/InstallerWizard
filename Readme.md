@@ -1,4 +1,4 @@
-# [![GBOS]([GBOSimg])](https://github.com/GeorgeBaldwin/InstallerWizard/raw/master/Images/AppIcon.png) App Installer 
+# [![GBOS]([GBOSimg])](/raw/master/Images/AppIcon.png) App Installer 
   - Automatic Installation of important software to you
   - Supports any kind of installation.
   - Built using the AutoIt script editor.
@@ -51,5 +51,5 @@ MIT
 **Free Software, Hell Yeah!**
 
 
-   [GBOSimg]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
+   [GBOSimg]: </safsd/adsfsadf>
   
