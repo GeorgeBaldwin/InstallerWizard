@@ -1,4 +1,4 @@
-# [![GBOS]([GBOSimg])](https://nodesource.com/products/nsolid) App Installer 
+# [![GBOS]([GBOSimg])](https://github.com/GeorgeBaldwin/InstallerWizard/raw/master/Images/AppIcon.png) App Installer 
   - Automatic Installation of important software to you
   - Supports any kind of installation.
   - Built using the AutoIt script editor.
