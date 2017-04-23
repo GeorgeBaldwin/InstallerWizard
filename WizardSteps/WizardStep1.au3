@@ -1,0 +1,23 @@
+
+
+Func StartWizard()
+   $Wizard1GUI =  GUICreate(" ", 640, 440,1, -1,  $WS_POPUP)
+   ChangeView($Wizard1GUI,$Wizard2GUI)
+   RoundTheView($Wizard1GUI)
+   addVerticalSeparator(220,0,440)
+   DrawImage($Wizard1GUI,@ScriptDir & "\Images\rubixSoft.png",15,180,55,58)
+   GUISetBkColor(0xEEEEEE)
+   $Pic1 = GUICtrlCreatePic("C:\DATA\Projects\git\GBOS_Application_Installer\Images\Separator.gif", 200, 0, 1, 433, BitOR($SS_NOTIFY,$WS_GROUP,$WS_CLIPSIBLINGS))
+   GUICtrlSetFont(-1, 16, 400, 0, "MS Sans Serif")
+   $Label1 = GUICtrlCreateLabel("GBOS", 64, 56, 80, 36)
+   GUICtrlSetFont(-1, 16, 400, 0, "MS Sans Serif")
+   $Label2 = GUICtrlCreateLabel("App Installer", 32, 120, 152, 36)
+   GUICtrlSetFont(-1, 16, 400, 0, "MS Sans Serif")
+   $Label3 = GUICtrlCreateLabel("Welcome to the GBOS applicatition installer. This  is a wizard driven experience that will allow you to select which software you would like to install on this machine. ", 247, 30, 330, 150)
+   GUICtrlSetFont(-1, 12, 400, 0, "MS Sans Serif")
+   $Label4 = GUICtrlCreateLabel("Optionally, you can choose to automatically register and enter all licensing information for each application that requires it.", 247, 220, 330, 100)
+   GUICtrlSetFont(-1, 12, 400, 0, "")
+   $Button1 = CreateButton("Cancel", 233, 393, 121, 33, "", "CloseApplication" )
+   $Button2 = CreateButton("Continue", 470, 393, 117, 33, "", "Wizard2")
+   GUISetState(@SW_SHOW,$Wizard1GUI)
+EndFunc
