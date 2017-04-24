@@ -31,9 +31,46 @@ No end user configuration is required. When the user double clicks the applicati
 
 * [AngularJS] - HTML enhanced for web apps!
 * [Ace Editor] - awesome web-based text editor
-First Tab:
-```sh
-$ Command Option
+
+
+File 1: InstallEngine.au3
+```vb
+Global $ApplicationList[15] = [ "Base Dev Tools" _
+							  , "AQT 10.2" _
+							  , "Visual Studio 2017" _
+							  , "Ruby DevKit 2.0+" _
+					          , "ADDS NEW ITEM HERE" _
+					          ]
+					          
+Func StartInstallation()
+   ...
+	  Switch $SoftwareItem
+        ...
+		 Case "ADDS NEW ITEM HERE"
+			INSTALLADDNEWITEMHERE()
+...
+End Function
+```
+###### File 2: ScriptedInstalls.au3
+You shld only have to add a new method that will more than likley call to one of the three methods below. 
+```vb
+function INSTALLADDNEWITEMHERE()
+    RunwaitCommand("/flag","ADDNEWITEMFOLDER")
+end if
+function RunWaitCommand ($filenameAndFlags , $appFolderName )
+    'Argument 1: File Name concatenated with all command switches
+    'Argument 2: Child path to main install path. application folder name
+end if
+    
+function InstallMSI($MSIFileName, $flags)
+    'Argument 1: The MSI file name including the extension *.msi
+    'Argument 2: All switches to use on the request.
+end if
+
+function InstallEclipsePlugin($pluginName , $repository)
+    'Argument 1: The Name of the plugin
+	'Argument 2: All switches to use on the request.
+end if
 ```
 
 ### Screen Shots
