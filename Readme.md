@@ -5,9 +5,9 @@
   - Magic
 
 # Usage
-Once compiled, a user will only need to step through the wizard and select the apps to be installed. the application handles the rest.
+Once compiled, a user will only need to step through the 4 step wizard and select the apps to be installed. the application handles the rest.
 
-Future Plans:
+Future Dreams:
   - Uninstall capabilities
   - Repair install capabilities
   - Update Capabilities
@@ -36,12 +36,19 @@ First Tab:
 $ Command Option
 ```
 
-
-
 ### Screen Shots
 
+##### Step 1:
+<img src="/Images/Sample%20Screenshots/step1.png" width="640">
 
+##### Step 2:
+<img src="/Images/Sample%20Screenshots/step2.png" width="640">
 
+##### Step 3:
+<img src="/Images/Sample%20Screenshots/step3.png" width="640">
+
+##### Step 4:
+<img src="/Images/Sample%20Screenshots/step4.png" width="640">
 
 
 License
