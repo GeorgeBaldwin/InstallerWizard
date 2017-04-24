@@ -1,5 +1,5 @@
 #  <img src="/Images/AppIcon.png" width="48">  App Installer 
-  - Automatic Installation of important software to you
+  - Automatic Installation of the important software you need to work.
   - Supports any kind of installation.
   - Built using the AutoIt script editor.
   - Magic
