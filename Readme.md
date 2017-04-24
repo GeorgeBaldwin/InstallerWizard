@@ -11,6 +11,7 @@ Future Dreams:
   - Uninstall capabilities
   - Repair install capabilities
   - Update Capabilities
+  - Move rules to INI or config file.
 
 This is an amazing application, many have been pleased with the results, and naturally those that benefit the most are those that enjoy many cups of coffee throughout the day such as the assistant to the assistant of the President of the Coffee Club who states
 
@@ -33,26 +34,29 @@ No end user configuration is required. When the user double clicks the applicati
 * [Ace Editor] - awesome web-based text editor
 
 
-File 1: InstallEngine.au3
+###### File 1: InstallEngine.au3
+You should only add a new item to the array ( up to 15 total items ). Once you added new item, then you can add the same string to the switch statment to call to your new custom method that contains the instructions for executing the command.
 ```vb
 Global $ApplicationList[15] = [ "Base Dev Tools" _
-							  , "AQT 10.2" _
-							  , "Visual Studio 2017" _
-							  , "Ruby DevKit 2.0+" _
-					          , "ADDS NEW ITEM HERE" _
-					          ]
+				, "AQT 10.2" _
+				, "Visual Studio 2017" _
+				, "Ruby DevKit 2.0+" _
+				, "ADDS NEW ITEM HERE" _
+			      ]
 					          
 Func StartInstallation()
    ...
-	  Switch $SoftwareItem
-        ...
-		 Case "ADDS NEW ITEM HERE"
-			INSTALLADDNEWITEMHERE()
-...
+	Switch $SoftwareItem
+            ...
+	    Case "ADDS NEW ITEM HERE"
+		INSTALLADDNEWITEMHERE()
+		...
+	    ...
+	End Switch
 End Function
 ```
 ###### File 2: ScriptedInstalls.au3
-You shld only have to add a new method that will more than likley call to one of the three methods below. 
+You should only have to add a new method that will more than likley call to one of the three methods below. 
 ```vb
 function INSTALLADDNEWITEMHERE()
     RunwaitCommand("/flag","ADDNEWITEMFOLDER")
@@ -69,7 +73,7 @@ end if
 
 function InstallEclipsePlugin($pluginName , $repository)
     'Argument 1: The Name of the plugin
-	'Argument 2: All switches to use on the request.
+    'Argument 2: All switches to use on the request.
 end if
 ```
 
